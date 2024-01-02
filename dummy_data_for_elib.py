@@ -395,8 +395,5 @@ loans_df.to_csv('loans.csv', index=False)
 
 # Save to CSV
 holds_df.to_csv('holds.csv', index=False)
-holds_df = holds(n_holds, customers_df, library_books_df)
-print(holds_df)
-
 
 
