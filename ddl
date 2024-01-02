@@ -52,12 +52,10 @@ CREATE TABLE library_books
     copies INTEGER NOT NULL CHECK(copies >= 0),
     CONSTRAINT fk_library_books_lib
         FOREIGN KEY(library_id)
-        REFERENCES libraries(library_id)
-        ON DELETE RESTRICT,
+        REFERENCES libraries(library_id),
     CONSTRAINT fk_library_books_bk
         FOREIGN KEY(books_id)
         REFERENCES books(books_id)
-		ON DELETE RESTRICT
 );
 
 CREATE TABLE customers
