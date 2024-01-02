@@ -1,0 +1,81 @@
+#importing files to libraries table
+COPY
+ libraries
+FROM
+ 'C:\Users\HP\Downloads\libraries.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to categories table
+COPY
+ categories
+FROM
+ 'C:\Users\HP\Downloads\category.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to publishers table
+COPY
+ publishers
+FROM
+ 'C:\Users\HP\Downloads\publishers.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to authors table
+COPY
+ authors
+FROM
+ 'C:\Users\HP\Downloads\authors.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to customers table
+COPY
+ customers
+FROM
+ 'C:\Users\HP\Downloads\customers.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to books table
+COPY
+ books
+FROM
+ 'C:\Users\HP\Downloads\books.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to library_books table
+COPY
+ library_books
+FROM
+ 'C:\Users\HP\Downloads\library_books.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to loans table
+COPY
+ loans
+FROM
+ 'C:\Users\HP\Downloads\loans.csv'
+DELIMITER ','
+CSV
+HEADER;
+
+#importing files to holds table
+COPY
+ holds
+FROM
+ 'C:\Users\HP\Downloads\holds.csv'
+DELIMITER ','
+CSV
+HEADER;
+
